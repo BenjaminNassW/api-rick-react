@@ -1,8 +1,13 @@
 import '/workspace/api-rick-react/src/styles/box.css'
-function Box() {
-    return (
-        <div className="bg-secondary border border-dark box">
+import React, { useState } from 'react';
 
+
+function Box(props) {
+    const [color, setColor] = useState("bg-secondary");
+
+
+    return (
+        <div className={`border border-dark box ${color}`} onClick={() => { props.id === 'water' ? setColor("bg-primary") : setColor("bg-danger") }}>
         </div>
     );
 }
