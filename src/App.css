@@ -5,3 +5,8 @@ div.App{
   margin-top: 100px;
 }
 
+h1#marco{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
