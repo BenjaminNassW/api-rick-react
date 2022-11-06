@@ -7,7 +7,8 @@ function Box(props) {
 
 
     return (
-        <div className={`border border-dark box ${color}`} onClick={() => { props.id === 'water' ? setColor("bg-primary") : setColor("bg-danger") }}>
+        <div id='boxes' className={`border border-dark box ${color}`} onClick={() => { props.id === 'water' ? setColor("bg-primary") : setColor("bg-danger") }}>
+
         </div>
     );
 }
